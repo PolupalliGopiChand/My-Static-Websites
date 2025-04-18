@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Static Projects</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <!-- Home Section -->
+  <div id="sectionhome" class="text-center p-3">
+    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/software-developer-img.png" class="img-fluid mb-3" style="max-width: 300px;">
+    <h1>My Static Projects</h1>
+    <p class="home-description">These are my static website projects developed using HTML, CSS, and Bootstrap</p>
+
+    <div class="d-flex flex-wrap justify-content-center">
+      <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/advanced-technologies-img.png" class="project-thumbnail" onclick="display('section1')">
+      <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/diwali-img.png" class="project-thumbnail" onclick="display('section2')">
+      <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/food-img.png" class="project-thumbnail" onclick="display('section3')">
+      <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/news-paper-img.png" class="project-thumbnail" onclick="display('section4')">
+    </div>
+  </div>
+
+  <!-- Section 1: Advanced Technologies -->
+  <div id="section1">
+    <div class="advanced-tech-section d-flex flex-column justify-content-end">
+      <div class="card-container">
+        <h1 class="card-heading">Advanced Technologies</h1>
+        <p class="card-description">Machinery and equipment developed from the application of scientific knowledge.</p>
+        <button class="btn-outline">Learn more</button>
+        <button class="btn-primary" onclick="display('sectionhome')">Back</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 2: Diwali -->
+  <div id="section2">
+    <div class="diwali-banner">
+      <h1 class="diwali-title">Celebrate Diwali with your Friends</h1>
+    </div>
+
+    <div class="diwali-container text-center">
+      <div class="d-flex flex-wrap justify-content-center">
+        <div class="product-card">
+          <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/lamp-img.png" class="product-image" />
+          <h1 class="product-name">Diwali Air Balloons</h1>
+          <p class="product-price">Rs 200</p>
+        </div>
+
+        <div class="product-card">
+          <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/diya-img.png" class="product-image" />
+          <h1 class="product-name">Diwali Lamps</h1>
+          <p class="product-price">Rs 50</p>
+        </div>
+
+        <div class="product-card">
+          <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/firework-img.png" class="product-image" />
+          <h1 class="product-name">Sparkles</h1>
+          <p class="product-price">Rs 100</p>
+        </div>
+
+        <div class="product-card">
+          <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/firecracker-img.png" class="product-image" />
+          <h1 class="product-name">Fire Crackers</h1>
+          <p class="product-price">Rs 250</p>
+        </div>
+      </div>
+      <button class="btn-primary" onclick="display('sectionhome')">Back</button>
+    </div>
+  </div>
+
+  <!-- Section 3: Happy Meals -->
+  <div id="section3">
+    <div class="meals-section d-flex flex-column justify-content-end">
+      <div class="meals-content text-center">
+        <h1 class="head">Happy Meals</h1>
+        <p class="para">Discover the best foods over 1,000 restaurants</p>
+        <button class="btn-outline">Book Now</button>
+        <button class="btn-primary" onclick="display('sectionhome')">Back</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 4: News -->
+  <div id="section4">
+    <div class="news-section d-flex flex-column justify-content-end">
+      <div class="news-content p-3">
+        <p class="subheading">NEWS OF THE DAY</p>
+        <h1 class="main-heading">iB Cricket announces world's first Virtual Reality Cricket League</h1>
+        <p class="subheading">iB Cricket and Viu together have announced the World's first virtual reality cricket league featuring 12 international cricketers in Mumbai.</p>
+        <button class="btn-dark">Read more</button>
+        <button class="btn-primary" onclick="display('sectionhome')">Back</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
